@@ -8,41 +8,38 @@ if (value === null) {
 
 } else {
     switch (value.toLowerCase()) {
-    case 'китай':
-        country = 'Китай';
-        price = 100;
-        message =`Доставка в ${country} будет стоить ${price} кредитов`;
-        break;
+        case 'китай':
+            country = 'Китай';
+            price = 100;
+            break;
     
-    case 'чили':
-        country = 'Чили';
-        price = 250;
-        message =`Доставка в ${country} будет стоить ${price} кредитов`;
-        break;
+        case 'чили':
+            country = 'Чили';
+            price = 250;
+            break;
     
-    case 'австралия':
-        country = 'Австралия';
-        price = 170;
-        message =`Доставка в ${country} будет стоить ${price} кредитов`;
-        break;
+        case 'австралия':
+            country = 'Австралия';
+            price = 170;
+            break;
     
-    case 'индия':
-        country = 'Индия';
-        price = 80;
-        message =`Доставка в ${country} будет стоить ${price} кредитов`;
-        break;
+        case 'индия':
+            country = 'Индия';
+            price = 80;
+            break;
     
-    case 'ямайка':
-        country = 'Ямайка';
-        price = 120;
-        message =`Доставка в ${country} будет стоить ${price} кредитов`;
-        break;
+        case 'ямайка':
+            country = 'Ямайка';
+            price = 120;
+            break;
     
-    default:
-        alert('В вашей стране доставка не доступна');    
-}
+        default:
+            alert('В вашей стране доставка не доступна');
+    }
 
-console.log(message);
+    if (price) {
+        console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
+    }
 }
 
 
